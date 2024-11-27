@@ -47,7 +47,7 @@ async function capturePerformanceProfile(url, outputPath, recordDurationSecs = 5
         while (Date.now() - startTime < recordDurationSecs * 1000) {
             const timestamp = Date.now() - startTime;
             const screenshotPath = path.join(
-                screenshotsDir,
+                path.join(path.dirname(outputPath), 'screenshots'),
                 `screenshot-${timestamp}ms.png`
             );
             

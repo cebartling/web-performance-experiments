@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "profiler.js",
   "scripts": {
-    "profile": "node profiler.js http://localhost:3000/ profiles 30 1",
+    "profile": "node profiler.js http://localhost:3000/ ./profiles/profile.cpuprofile 10 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Christopher Bartling",
